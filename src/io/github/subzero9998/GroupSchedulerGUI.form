@@ -27,46 +27,119 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="wednesdayLabel" linkSize="1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="wednesdayField" min="-2" pref="90" max="-2" attributes="0"/>
-                                  <Component id="tuesdayField" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
-                                  <Component id="thursdayField" min="-2" pref="90" max="-2" attributes="0"/>
-                                  <Component id="fridayField" min="-2" pref="90" max="-2" attributes="0"/>
-                                  <Component id="saturdayField" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
-                                  <Component id="sundayField" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="mondayLabel" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="nameLabel" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="nameField" max="32767" attributes="0"/>
-                                  <Component id="mondayField" pref="90" max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jComboBox1" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="thursdayLabel" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="fridayLabel" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="saturdayLabel" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="sundayLabel" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="nameLabel" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                       <Component id="addButton" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="tuesdayLabel" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="wednesdayLabel" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jCheckBox3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="mondayLabel" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jCheckBox1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="thursdayLabel" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jCheckBox4" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="fridayLabel" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jCheckBox5" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="saturdayLabel" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jCheckBox6" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="sundayLabel" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jCheckBox7" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="tuesdayLabel" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jCheckBox2" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jCheckBox8" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCheckBox9" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCheckBox10" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCheckBox14" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCheckBox13" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCheckBox11" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCheckBox12" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jCheckBox15" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCheckBox17" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCheckBox21" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCheckBox20" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCheckBox18" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCheckBox19" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCheckBox16" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                              <Component id="jCheckBox23" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jCheckBox40" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jCheckBox38" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jCheckBox39" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jCheckBox41" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jCheckBox22" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jCheckBox24" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox25" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox26" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox30" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox29" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox27" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox28" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jCheckBox31" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox32" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox33" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox37" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox36" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox34" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox35" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                      <Component id="jCheckBox42" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace pref="16" max="32767" attributes="0"/>
+              <EmptySpace pref="304" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Group type="102" attributes="0">
                       <Component id="calcButton" min="-2" pref="182" max="-2" attributes="0"/>
@@ -102,51 +175,8 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="nameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="nameField" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="mondayLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="mondayField" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="tuesdayLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="tuesdayField" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="wednesdayLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="wednesdayField" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="thursdayField" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="thursdayLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="fridayField" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="fridayLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="saturdayField" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="saturdayLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="sundayField" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="sundayLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -185,14 +215,155 @@
                               <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="40" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jCheckBox10" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="nameLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="mondayLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="jCheckBox17" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jCheckBox18" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jCheckBox19" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="tuesdayLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="wednesdayLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jCheckBox3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jCheckBox12" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="jCheckBox11" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="thursdayLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jCheckBox4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jCheckBox20" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="fridayLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jCheckBox5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="jCheckBox21" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jCheckBox41" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                                      <Component id="saturdayLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="jCheckBox6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Component id="jCheckBox8" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jCheckBox15" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="jCheckBox9" min="-2" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="3" attributes="0">
+                                                      <Component id="sundayLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="jCheckBox7" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Component id="jCheckBox16" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jCheckBox23" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Component id="jCheckBox22" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Component id="jCheckBox14" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="jCheckBox13" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jCheckBox26" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCheckBox38" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCheckBox33" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jCheckBox34" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jCheckBox35" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jCheckBox39" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="jCheckBox40" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox28" alignment="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="jCheckBox27" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jCheckBox36" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jCheckBox37" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jCheckBox24" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jCheckBox31" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jCheckBox25" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jCheckBox32" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Component id="jCheckBox30" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="jCheckBox29" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
+                              <Component id="jCheckBox42" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
               </Group>
+              <EmptySpace pref="171" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="addButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="calcButton" alignment="3" min="-2" pref="112" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="17" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -213,34 +384,15 @@
         <Property name="text" type="java.lang.String" value="Wednesday"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="mondayField">
-    </Component>
-    <Component class="javax.swing.JTextField" name="tuesdayField">
-    </Component>
-    <Component class="javax.swing.JTextField" name="wednesdayField">
-    </Component>
-    <Component class="javax.swing.JTextField" name="thursdayField">
-    </Component>
     <Component class="javax.swing.JLabel" name="thursdayLabel">
       <Properties>
         <Property name="text" type="java.lang.String" value="Thursday"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="fridayField">
-    </Component>
-    <Component class="javax.swing.JTextField" name="saturdayField">
-    </Component>
-    <Component class="javax.swing.JTextField" name="sundayField">
-    </Component>
     <Component class="javax.swing.JLabel" name="nameLabel">
       <Properties>
         <Property name="text" type="java.lang.String" value="Name"/>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="nameField">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nameFieldActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="fridayLabel">
       <Properties>
@@ -357,20 +509,89 @@
         <Property name="focusable" type="boolean" value="false"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox1">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Item 1"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox1">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox2">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox3">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox4">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox5">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox6">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox7">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox8">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox9">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox10">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox11">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox12">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox13">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox14">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox15">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox16">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox17">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox18">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox19">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox20">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox21">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox22">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox23">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox24">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox25">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox26">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox27">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox28">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox29">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox30">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox31">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox32">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox33">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox34">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox35">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox36">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox37">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox38">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox39">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox40">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox41">
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox42">
     </Component>
   </SubComponents>
 </Form>
