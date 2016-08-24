@@ -13,7 +13,6 @@ public class Person {
 
     String name;
     Schedule schedule;
-    
 
     public Person(String name, Schedule schedule) {
         this.name = name;
