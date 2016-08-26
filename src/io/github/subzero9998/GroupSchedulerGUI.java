@@ -19,6 +19,7 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
      * Creates new form GroupSchedulerGUI
      */
     public GroupSchedulerGUI() {
+        
         initComponents();
         clearRight();
     }
@@ -32,6 +33,9 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jFrame1 = new javax.swing.JFrame();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
         mondayLabel = new javax.swing.JLabel();
         tuesdayLabel = new javax.swing.JLabel();
         wednesdayLabel = new javax.swing.JLabel();
@@ -73,6 +77,36 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
         nameField = new javax.swing.JTextField();
         fromLabel = new javax.swing.JLabel();
         toLabel = new javax.swing.JLabel();
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
+        jFrame1.getContentPane().setLayout(jFrame1Layout);
+        jFrame1Layout.setHorizontalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jFrame1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jFrame1Layout.setVerticalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jFrame1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 269, Short.MAX_VALUE)
+                .addGap(20, 20, 20))
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Group Scheduler");
@@ -396,6 +430,7 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
                 satFrom.getItemAt(satFrom.getSelectedIndex()) + satTo.getItemAt(satTo.getSelectedIndex()),
                 sunFrom.getItemAt(sunFrom.getSelectedIndex()) + sunFrom.getItemAt(sunFrom.getSelectedIndex()));
         //Person person = new Person(nameField.getText(), schedule);
+        schedule.setArrays();
         persons.add(new Person(nameField.getText(), schedule));
         count++;
         monFrom.setSelectedIndex(0);
@@ -431,6 +466,7 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
         jButton7.setVisible(false);
     }
     private void calcButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcButtonActionPerformed
+        jFrame1.setVisible(true);
         clearRight();
     }//GEN-LAST:event_calcButtonActionPerformed
 
@@ -487,6 +523,7 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
+    private javax.swing.JFrame jFrame1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -494,6 +531,8 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
     private javax.swing.JComboBox<String> monFrom;
     private javax.swing.JComboBox<String> monTo;
     private javax.swing.JLabel mondayLabel;
