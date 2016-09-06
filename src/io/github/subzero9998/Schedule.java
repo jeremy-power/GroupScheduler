@@ -10,23 +10,26 @@ package io.github.subzero9998;
  * @author Jeremy
  */
 public class Schedule {
-
+    //represents the schedule as a string IE "12 AM1 PM4AM 3PM"
     public String fullSchedule;
+    //holds the string as an iterable char array
     public char[] fullScheduleA;
-    public int[] monArray = new int[23];
-    public int[] tueArray = new int[23];
-    public int[] wedArray = new int[23];
-    public int[] thuArray = new int[23];
-    public int[] friArray = new int[23];
-    public int[] satArray = new int[23];
-    public int[] sunArray = new int[23];
+    //represents each day's schedule as a comparable binary array of ints
+    public int[] monArray = new int[24];
+    public int[] tueArray = new int[24];
+    public int[] wedArray = new int[24];
+    public int[] thuArray = new int[24];
+    public int[] friArray = new int[24];
+    public int[] satArray = new int[24];
+    public int[] sunArray = new int[24];
+    //holds the days schedules in an iterable array
     int[][] daysArray = new int[][]{monArray, tueArray, wedArray, thuArray, friArray, satArray, sunArray};
-
+    //creates the string and char array
     public Schedule(String monday, String tuesday, String wednesday, String thursday, String friday, String saturday, String sunday) {
         this.fullSchedule = monday + tuesday + wednesday + thursday + friday + saturday + sunday;
         this.fullScheduleA = fullSchedule.toCharArray();
     }
-
+    //method that converts from one char array to 7 comparable int arrays
     public void setArrays() {
         //first time
         int fTime;
@@ -85,6 +88,10 @@ public class Schedule {
             Boolean rolling = false;
             //loops through each hour of each day
             for (int k = 0; k < daysArray[i].length; k++) {
+                //using the first time and second time
+                //it loops through each hour, setting rolling
+                //to true on first time and false on second time
+                //setting each index between to 1
                 if (k == sTime)
                     rolling = false;
                 if (k == fTime)

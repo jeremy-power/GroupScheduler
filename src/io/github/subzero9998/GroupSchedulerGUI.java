@@ -14,12 +14,12 @@ import java.awt.Rectangle;
 public class GroupSchedulerGUI extends javax.swing.JFrame {
 
     public int count = 1;
-    private ArrayList<Person> persons = new ArrayList<Person>();
+    // list that holds each person and schedule
+    public static ArrayList<Person> persons = new ArrayList<>();
     /**
      * Creates new form GroupSchedulerGUI
      */
     public GroupSchedulerGUI() {
-        
         initComponents();
         clearRight();
     }
@@ -382,9 +382,9 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    //add button
     private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addButtonActionPerformed
-        
+        //generates jLabel and delete button
         switch (count) {
             case 1: jButton1.setVisible(true);
                     jLabel1.setText(nameField.getText());
@@ -408,6 +408,7 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
                     jLabel7.setText(nameField.getText());
                     break;
         }
+        //creates schedule object from combo boxes
         Schedule schedule = new Schedule(monFrom.getItemAt(monFrom.getSelectedIndex()) + monTo.getItemAt(monTo.getSelectedIndex()),
                 tueFrom.getItemAt(tueFrom.getSelectedIndex()) + tueTo.getItemAt(tueTo.getSelectedIndex()),
                 wedFrom.getItemAt(wedFrom.getSelectedIndex()) + wedTo.getItemAt(wedTo.getSelectedIndex()),
@@ -415,25 +416,12 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
                 friFrom.getItemAt(friFrom.getSelectedIndex()) + friTo.getItemAt(friTo.getSelectedIndex()),
                 satFrom.getItemAt(satFrom.getSelectedIndex()) + satTo.getItemAt(satTo.getSelectedIndex()),
                 sunFrom.getItemAt(sunFrom.getSelectedIndex()) + sunFrom.getItemAt(sunFrom.getSelectedIndex()));
-        //Person person = new Person(nameField.getText(), schedule);
         schedule.setArrays();
+        //adds person object to list
         persons.add(new Person(nameField.getText(), schedule));
+        //moves to next jLabel
         count++;
-        monFrom.setSelectedIndex(0);
-        monTo.setSelectedIndex(0);
-        tueFrom.setSelectedIndex(0);
-        tueTo.setSelectedIndex(0);
-        wedFrom.setSelectedIndex(0);
-        wedTo.setSelectedIndex(0);
-        thuFrom.setSelectedIndex(0);
-        thuTo.setSelectedIndex(0);
-        friFrom.setSelectedIndex(0);
-        friTo.setSelectedIndex(0);
-        satFrom.setSelectedIndex(0);
-        satTo.setSelectedIndex(0);
-        sunFrom.setSelectedIndex(0);
-        sunTo.setSelectedIndex(0);
-        nameField.setText("");
+        clearLeft();
     }//GEN-LAST:event_addButtonActionPerformed
     private void clearRight() {
         jLabel1.setText("");
@@ -451,6 +439,24 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
         jButton6.setVisible(false);
         jButton7.setVisible(false);
     }
+    private void clearLeft() {
+        monFrom.setSelectedIndex(0);
+        monTo.setSelectedIndex(0);
+        tueFrom.setSelectedIndex(0);
+        tueTo.setSelectedIndex(0);
+        wedFrom.setSelectedIndex(0);
+        wedTo.setSelectedIndex(0);
+        thuFrom.setSelectedIndex(0);
+        thuTo.setSelectedIndex(0);
+        friFrom.setSelectedIndex(0);
+        friTo.setSelectedIndex(0);
+        satFrom.setSelectedIndex(0);
+        satTo.setSelectedIndex(0);
+        sunFrom.setSelectedIndex(0);
+        sunTo.setSelectedIndex(0);
+        nameField.setText("");
+    }
+    //creates the schedule window when calculate is pressed
     private void calcButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcButtonActionPerformed
         ScheduleWindow scheduleWindow = new ScheduleWindow();
         clearRight();
