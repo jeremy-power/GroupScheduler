@@ -19,7 +19,7 @@ import javax.swing.JFrame;
     
     public ScheduleWindow() {
         setTitle("Availability");
-        setSize(580, 665);
+        setSize(580, 670);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setResizable(false);
         

@@ -5,6 +5,7 @@
  */
 package io.github.subzero9998;
 
+import static io.github.subzero9998.GroupSchedulerGUI.persons;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.util.ArrayList;
@@ -21,6 +22,7 @@ public class ScheduleScreen extends JPanel {
     public ScheduleScreen() {
         repaint();
     }
+
     //draws schedule GUI
     public void paint(Graphics g) {
         //(x, y, width, height)
@@ -30,7 +32,7 @@ public class ScheduleScreen extends JPanel {
         for (int i = 0; i < 7; i++) {
             //for each hour of each day
             for (int k = 0; k < 24; k++) {
-                //if 23 boxes have been drawn
+                //if 24 boxes have been drawn
                 if (yInc == 600) {
                     //start back at the top 75 pixels to the right
                     yInc = 0;
@@ -54,25 +56,32 @@ public class ScheduleScreen extends JPanel {
         g.drawString("Sunday", 60 + 75 * 6, 20);
         int time = 1;
         int xInc2 = 0;
-        g.drawString("12AM", 5, 45);
+        g.drawString("12AM", 5, 33);
         for (int i = 0; i < 11; i++) {
-            g.drawString(time + "AM", 5, 70 + xInc2);
+            g.drawString(time + "AM", 5, 58 + xInc2);
             time += 1;
             xInc2 += 25;
         }
         time = 1;
-        g.drawString("12PM", 5, 345);
-        for (int k = 0; k < 11; k++) {
-            g.drawString(time + "PM", 5, 70 + 25 + xInc2);
-            time += 1;
-            xInc2 += 25;
+        g.drawString("12PM", 5, 333);
+        for (int k = 0; k < 12; k++) {
+            if (k == 11) {
+                g.drawString(time + "AM", 5, 83 + xInc2);
+                time += 1;
+                xInc2 += 25;
+            } else {
+                g.drawString(time + "PM", 5, 83 + xInc2);
+                time += 1;
+                xInc2 += 25;
+            }
         }
+        persons.clear();
     }
 
     private void checkFill(Graphics g, int xInc, int yInc, int i, int k) {
         boolean check;
         check = true;
-        
+
         for (int p = 0; p < GroupSchedulerGUI.persons.size(); p++) {
             if (GroupSchedulerGUI.persons.get(p).schedule.daysArray[i][k] == 0) {
                 check = false;

@@ -6,7 +6,9 @@
 package io.github.subzero9998;
 
 import java.util.ArrayList;
-import java.awt.Rectangle;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Jeremy
@@ -16,12 +18,22 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
     public int count = 1;
     // list that holds each person and schedule
     public static ArrayList<Person> persons = new ArrayList<>();
+
     /**
      * Creates new form GroupSchedulerGUI
      */
     public GroupSchedulerGUI() {
         initComponents();
         clearRight();
+    }
+    public void errorMessage(String str) {
+        
+
+            JFrame frame = new JFrame();
+            JOptionPane.showMessageDialog(frame,
+                    str,
+                    "Error",
+                    JOptionPane.ERROR_MESSAGE);
     }
 
     /**
@@ -50,13 +62,6 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
         monFrom = new javax.swing.JComboBox<>();
         monTo = new javax.swing.JComboBox<>();
         tueFrom = new javax.swing.JComboBox<>();
@@ -74,10 +79,26 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
         nameField = new javax.swing.JTextField();
         fromLabel = new javax.swing.JLabel();
         toLabel = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
+        clearButton = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Group Scheduler");
+        setPreferredSize(new java.awt.Dimension(485, 410));
+        setResizable(false);
 
         mondayLabel.setText("Monday");
 
@@ -130,32 +151,6 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
         jLabel7.setText("jLabel");
         jLabel7.setFocusable(false);
 
-        jButton1.setText("Delete");
-        jButton1.setFocusable(false);
-
-        jButton2.setText("Delete");
-        jButton2.setFocusable(false);
-
-        jButton3.setText("Delete");
-        jButton3.setFocusable(false);
-
-        jButton4.setText("Delete");
-        jButton4.setFocusable(false);
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-
-        jButton5.setText("Delete");
-        jButton5.setFocusable(false);
-
-        jButton6.setText("Delete");
-        jButton6.setFocusable(false);
-
-        jButton7.setText("Delete");
-        jButton7.setFocusable(false);
-
         monFrom.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "12 AM", "1 AM", "2 AM", "3 AM", "4 AM", "5 AM", "6 AM", "7 AM", "8 AM", "9 AM", "10 AM", "11 AM", "12 PM", "1 PM", "2 PM", "3 PM", "4 PM", "5 PM", "6 PM", "7 PM", "8 PM", "9 PM", "10 PM", "11 PM" }));
 
         monTo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "12 AM", "1 AM", "2 AM", "3 AM", "4 AM", "5 AM", "6 AM", "7 AM", "8 AM", "9 AM", "10 AM", "11 AM", "12 PM", "1 PM", "2 PM", "3 PM", "4 PM", "5 PM", "6 PM", "7 PM", "8 PM", "9 PM", "10 PM", "11 PM" }));
@@ -188,16 +183,54 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
 
         toLabel.setText("To");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
+        clearButton.setText("Clear");
+        clearButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                clearButtonActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setText("jLabel");
+        jLabel8.setFocusable(false);
+
+        jLabel9.setText("jLabel");
+        jLabel9.setFocusable(false);
+
+        jLabel10.setText("jLabel");
+        jLabel10.setFocusable(false);
+
+        jLabel11.setText("jLabel");
+        jLabel11.setFocusable(false);
+
+        jLabel12.setText("jLabel");
+        jLabel12.setFocusable(false);
+
+        jLabel13.setText("jLabel");
+        jLabel13.setFocusable(false);
+
+        jLabel14.setText("jLabel");
+        jLabel14.setFocusable(false);
+
+        jLabel15.setText("jLabel");
+        jLabel15.setFocusable(false);
+
+        jLabel16.setText("jLabel");
+        jLabel16.setFocusable(false);
+
+        jLabel17.setText("jLabel");
+        jLabel17.setFocusable(false);
+
+        jLabel18.setText("jLabel");
+        jLabel18.setFocusable(false);
+
+        jLabel19.setText("jLabel");
+        jLabel19.setFocusable(false);
+
+        jLabel20.setText("jLabel");
+        jLabel20.setFocusable(false);
+
+        jLabel21.setText("jLabel");
+        jLabel21.setFocusable(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -206,9 +239,6 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(47, 47, 47)
-                        .addComponent(addButton))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(wednesdayLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -227,12 +257,6 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
                         .addComponent(satFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(satTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(sundayLabel)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(sunFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(sunTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(tuesdayLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -262,34 +286,55 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
                                 .addComponent(toLabel)
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addComponent(nameField))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel6))
+                .addGap(58, 58, 58)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel9)
+                    .addComponent(jLabel10)
+                    .addComponent(jLabel11)
+                    .addComponent(jLabel12)
+                    .addComponent(jLabel13)
+                    .addComponent(jLabel14))
+                .addGap(60, 60, 60)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel15)
+                    .addComponent(jLabel16)
+                    .addComponent(jLabel17)
+                    .addComponent(jLabel18)
+                    .addComponent(jLabel19)
+                    .addComponent(jLabel20)
+                    .addComponent(jLabel21))
+                .addGap(23, 23, 23))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(calcButton, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(57, 57, 57))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel6))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton7)
-                            .addComponent(jButton5)
-                            .addComponent(jButton6)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(clearButton)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButton1)
-                                    .addComponent(jButton2)
-                                    .addComponent(jButton3)
-                                    .addComponent(jButton4))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(9, 9, 9))))
+                                .addGap(47, 47, 47)
+                                .addComponent(addButton))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(sundayLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(sunFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(sunTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addComponent(calcButton, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(41, 41, 41))
         );
 
         layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {fridayLabel, mondayLabel, nameLabel, saturdayLabel, sundayLabel, thursdayLabel, tuesdayLabel, wednesdayLabel});
@@ -299,37 +344,6 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jButton1)
-                                    .addComponent(jLabel1))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jButton2)
-                                    .addComponent(jLabel2))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jButton3)
-                                    .addComponent(jLabel3))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jButton4)
-                                    .addComponent(jLabel4)))
-                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton5)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton6)
-                            .addComponent(jLabel6))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel7)
-                            .addComponent(jButton7)))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(nameLabel)
@@ -367,17 +381,63 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(saturdayLabel)
                             .addComponent(satFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(satTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(sundayLabel)
-                            .addComponent(sunFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(sunTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(18, 18, 18)
+                            .addComponent(satTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel15)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel16)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel17)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel20)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel21))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel7))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel8)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel9)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel10)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel11)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel13)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel14)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addGap(7, 7, 7)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(addButton)
-                    .addComponent(calcButton, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(sundayLabel)
+                    .addComponent(sunFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sunTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(addButton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(calcButton, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(clearButton)))
         );
 
         pack();
@@ -385,60 +445,158 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
     //add button
     private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addButtonActionPerformed
         //generates jLabel and delete button
-        switch (count) {
-            case 1: jButton1.setVisible(true);
-                    jLabel1.setText(nameField.getText());
-                    break;
-            case 2: jButton2.setVisible(true);
-                    jLabel2.setText(nameField.getText());
-                    break;
-            case 3: jButton3.setVisible(true);
-                    jLabel3.setText(nameField.getText());
-                    break;
-            case 4: jButton4.setVisible(true);
-                    jLabel4.setText(nameField.getText());
-                    break;
-            case 5: jButton5.setVisible(true);
-                    jLabel5.setText(nameField.getText());
-                    break;
-            case 6: jButton6.setVisible(true);
-                    jLabel6.setText(nameField.getText());
-                    break;
-            case 7: jButton7.setVisible(true);
-                    jLabel7.setText(nameField.getText());
-                    break;
+        if (count > 21) {
+            errorMessage("Maximum # of people reached.");
+        } else {
+            int mon1 = monFrom.getSelectedIndex();
+            int mon2 = monTo.getSelectedIndex();
+            int tue1 = tueFrom.getSelectedIndex();
+            int tue2 = tueTo.getSelectedIndex();
+            int wed1 = wedFrom.getSelectedIndex();
+            int wed2 = wedTo.getSelectedIndex();
+            int thu1 = thuFrom.getSelectedIndex();
+            int thu2 = thuTo.getSelectedIndex();
+            int fri1 = friFrom.getSelectedIndex();
+            int fri2 = friTo.getSelectedIndex();
+            int sat1 = satFrom.getSelectedIndex();
+            int sat2 = satTo.getSelectedIndex();
+            int sun1 = sunFrom.getSelectedIndex();
+            int sun2 = sunTo.getSelectedIndex();
+            //displays an error if the second time per day is earlier than the first
+            //exception made for 12AM
+            if (((mon1 <= mon2) || mon2 == 0) && ((tue1 <= tue2) || tue2 == 0)
+                    && ((wed1 <= wed2) || wed2 == 0) && ((thu1 <= thu2) || thu2 == 0)
+                    && ((fri1 <= fri2) || fri2 == 0) && ((sat1 <= sat2) || sat2 == 0)
+                    && ((sun1 <= sun2) || sun2 == 0)) {
+                switch (count) {
+                    case 1:
+                        jLabel1.setText(nameField.getText());
+                        jLabel1.setVisible(true);
+                        break;
+                    case 2:
+                        jLabel2.setText(nameField.getText());
+                        jLabel2.setVisible(true);
+                        break;
+                    case 3:
+                        jLabel3.setText(nameField.getText());
+                        jLabel3.setVisible(true);
+                        break;
+                    case 4:
+                        jLabel4.setText(nameField.getText());
+                        jLabel4.setVisible(true);
+                        break;
+                    case 5:
+                        jLabel5.setText(nameField.getText());
+                        jLabel5.setVisible(true);
+                        break;
+                    case 6:
+                        jLabel6.setText(nameField.getText());
+                        jLabel6.setVisible(true);
+                        break;
+                    case 7:
+                        jLabel7.setText(nameField.getText());
+                        jLabel7.setVisible(true);
+                        break;
+                    case 8:
+                        jLabel8.setText(nameField.getText());
+                        jLabel8.setVisible(true);
+                        break;
+                    case 9:
+                        jLabel9.setText(nameField.getText());
+                        jLabel9.setVisible(true);
+                        break;
+                    case 10:
+                        jLabel10.setText(nameField.getText());
+                        jLabel10.setVisible(true);
+                        break;
+                    case 11:
+                        jLabel11.setText(nameField.getText());
+                        jLabel11.setVisible(true);
+                        break;
+                    case 12:
+                        jLabel12.setText(nameField.getText());
+                        jLabel12.setVisible(true);
+                        break;
+                    case 13:
+                        jLabel13.setText(nameField.getText());
+                        jLabel13.setVisible(true);
+                        break;
+                    case 14:
+                        jLabel14.setText(nameField.getText());
+                        jLabel14.setVisible(true);
+                        break;
+                    case 15:
+                        jLabel15.setText(nameField.getText());
+                        jLabel15.setVisible(true);
+                        break;
+                    case 16:
+                        jLabel16.setText(nameField.getText());
+                        jLabel16.setVisible(true);
+                        break;
+                    case 17:
+                        jLabel17.setText(nameField.getText());
+                        jLabel17.setVisible(true);
+                        break;
+                    case 18:
+                        jLabel18.setText(nameField.getText());
+                        jLabel18.setVisible(true);
+                        break;
+                    case 19:
+                        jLabel19.setText(nameField.getText());
+                        jLabel19.setVisible(true);
+                        break;
+                    case 20:
+                        jLabel20.setText(nameField.getText());
+                        jLabel20.setVisible(true);
+                        break;
+                    case 21:
+                        jLabel21.setText(nameField.getText());
+                        jLabel21.setVisible(true);
+                        break;
+                }
+                //creates schedule object from combo boxes
+                Schedule schedule = new Schedule(monFrom.getItemAt(mon1) + monFrom.getItemAt(mon2),
+                        tueFrom.getItemAt(tue1) + tueFrom.getItemAt(tue2),
+                        wedFrom.getItemAt(wed1) + wedFrom.getItemAt(wed2),
+                        thuFrom.getItemAt(thu1) + thuFrom.getItemAt(thu2),
+                        friFrom.getItemAt(fri1) + friFrom.getItemAt(fri2),
+                        satFrom.getItemAt(sat1) + satFrom.getItemAt(sat2),
+                        sunFrom.getItemAt(sun1) + sunFrom.getItemAt(sun2));
+                schedule.setArrays();
+                //adds person object to list
+                persons.add(new Person(nameField.getText(), schedule));
+                //moves to next jLabel
+                count++;
+                clearLeft();
+            } else {
+                errorMessage("Times are invalid. Second time must be after first time.");
+            }
         }
-        //creates schedule object from combo boxes
-        Schedule schedule = new Schedule(monFrom.getItemAt(monFrom.getSelectedIndex()) + monTo.getItemAt(monTo.getSelectedIndex()),
-                tueFrom.getItemAt(tueFrom.getSelectedIndex()) + tueTo.getItemAt(tueTo.getSelectedIndex()),
-                wedFrom.getItemAt(wedFrom.getSelectedIndex()) + wedTo.getItemAt(wedTo.getSelectedIndex()),
-                thuFrom.getItemAt(thuFrom.getSelectedIndex()) + thuTo.getItemAt(thuTo.getSelectedIndex()),
-                friFrom.getItemAt(friFrom.getSelectedIndex()) + friTo.getItemAt(friTo.getSelectedIndex()),
-                satFrom.getItemAt(satFrom.getSelectedIndex()) + satTo.getItemAt(satTo.getSelectedIndex()),
-                sunFrom.getItemAt(sunFrom.getSelectedIndex()) + sunFrom.getItemAt(sunFrom.getSelectedIndex()));
-        schedule.setArrays();
-        //adds person object to list
-        persons.add(new Person(nameField.getText(), schedule));
-        //moves to next jLabel
-        count++;
-        clearLeft();
     }//GEN-LAST:event_addButtonActionPerformed
     private void clearRight() {
-        jLabel1.setText("");
-        jLabel2.setText("");
-        jLabel3.setText("");
-        jLabel4.setText("");
-        jLabel5.setText("");
-        jLabel6.setText("");
-        jLabel7.setText("");
-        jButton1.setVisible(false);
-        jButton2.setVisible(false);
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton5.setVisible(false);
-        jButton6.setVisible(false);
-        jButton7.setVisible(false);
+        jLabel1.setVisible(false);
+        jLabel2.setVisible(false);
+        jLabel3.setVisible(false);
+        jLabel4.setVisible(false);
+        jLabel5.setVisible(false);
+        jLabel6.setVisible(false);
+        jLabel7.setVisible(false);
+        jLabel8.setVisible(false);
+        jLabel9.setVisible(false);
+        jLabel10.setVisible(false);
+        jLabel11.setVisible(false);
+        jLabel12.setVisible(false);
+        jLabel13.setVisible(false);
+        jLabel14.setVisible(false);
+        jLabel15.setVisible(false);
+        jLabel16.setVisible(false);
+        jLabel17.setVisible(false);
+        jLabel18.setVisible(false);
+        jLabel19.setVisible(false);
+        jLabel20.setVisible(false);
+        jLabel21.setVisible(false);
     }
+
     private void clearLeft() {
         monFrom.setSelectedIndex(0);
         monTo.setSelectedIndex(0);
@@ -456,15 +614,18 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
         sunTo.setSelectedIndex(0);
         nameField.setText("");
     }
+
     //creates the schedule window when calculate is pressed
     private void calcButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcButtonActionPerformed
         ScheduleWindow scheduleWindow = new ScheduleWindow();
         clearRight();
     }//GEN-LAST:event_calcButtonActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    private void clearButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearButtonActionPerformed
+        clearRight();
+        persons.clear();
+        count = 1;
+    }//GEN-LAST:event_clearButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -478,7 +639,7 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    javax.swing.UIManager.setLookAndFeel(javax.swing.UIManager.getSystemLookAndFeelClassName());
                     break;
                 }
             }
@@ -496,6 +657,7 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+
                 new GroupSchedulerGUI().setVisible(true);
             }
         });
@@ -504,25 +666,32 @@ public class GroupSchedulerGUI extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addButton;
     private javax.swing.JButton calcButton;
+    private javax.swing.JButton clearButton;
     private javax.swing.JComboBox<String> friFrom;
     private javax.swing.JComboBox<String> friTo;
     private javax.swing.JLabel fridayLabel;
     private javax.swing.JLabel fromLabel;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JComboBox<String> monFrom;
     private javax.swing.JComboBox<String> monTo;
     private javax.swing.JLabel mondayLabel;
